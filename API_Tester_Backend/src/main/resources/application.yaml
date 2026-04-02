@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: API_Tester_Backend
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/API_Tester}
+    username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:itspostgresql}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
