@@ -23,7 +23,6 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/collections")
-@CrossOrigin(origins = "http://localhost:3000")
 public class CollectionController {
 
     private final CollectionService collectionService;

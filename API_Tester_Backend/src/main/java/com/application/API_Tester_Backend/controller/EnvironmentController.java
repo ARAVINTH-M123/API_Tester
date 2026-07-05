@@ -19,7 +19,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/environments")
-@CrossOrigin(origins = "http://localhost:3000")
 public class EnvironmentController {
 
     private final EnvironmentService environmentService;
