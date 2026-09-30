@@ -22,7 +22,7 @@ A self-hosted HTTP API testing tool, similar in spirit to Postman/Insomnia. It l
 | Layer | Technology |
 |---|---|
 | Frontend | _fill in framework, e.g. React/Vite_ — deployed on [Vercel](https://vercel.com) |
-| Backend | _fill in framework, e.g. Node/Express_ — containerized with Docker |
+| Backend | _fill in framework, e.g. Node/Express_ — containerized with Docker, hosted on [Render](https://render.com) |
 | Database | PostgreSQL, hosted on [Neon](https://neon.tech) |
 
 > Update this table with your actual stack details.
@@ -67,7 +67,7 @@ The app uses the following tables (Postgres):
 
 - Node.js (version ___)
 - Docker (for running the backend locally)
-- A PostgreSQL database (e.g. a free [Neon](https://neon.tech) project)
+- A PostgreSQL database
 
 ### 1. Clone the repo
 
@@ -108,7 +108,7 @@ npm run dev
 ## Deployment
 
 - **Frontend:** connected to Vercel via GitHub. Every push to `main` triggers a production deployment; pushes to other branches or open PRs get a preview deployment.
-- **Backend:** built from the Dockerfile and deployed to your backend host. Set environment variables there to match your production database and secrets.
+- **Backend:** built from the Dockerfile and deployed on [Render](https://render.com). Set environment variables there to match your production database and secrets.
 - **Database:** hosted on Neon. Point `DATABASE_URL` at your Neon connection string in both local and deployed environments.
 
 ---
@@ -117,10 +117,9 @@ npm run dev
 
 - [ ] Request history, collections, and environments are implemented in the schema but not yet wired up end-to-end
 - [ ] Password reset flow
-- [ ] Tests
 
 ---
 
 ## License
 
-_Add your license here (e.g. MIT)._
+None
